@@ -1,5 +1,125 @@
 
 @import "reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
 @import "grid.scss";
 
+$orange:rgba(202, 188, 115, 0.69);
+$green:#85C958;
+$border:1px solid rgba(0, 0, 0, 0.2);
+$transition: all 0.3s ease-in-out;
 
+
+// header
+.header{
+    border-bottom: $border;
+}
+.logo{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.logo__img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    background-color: $orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        font-family: 'Jost', sans-serif;
+        font-size: 32px;
+        color: #fff;
+    }
+}
+
+// menu
+
+.menu{
+    display: flex;
+    margin-top: 35px;
+    .navigation{
+        width: 100%;
+    }
+}
+.nav__menu{
+    justify-content: space-between;
+    li{
+        position: relative;
+        transition: $transition;
+        border-bottom: 2px solid transparent;
+        &:hover{
+            padding-bottom: 10px;
+            border-bottom: 2px solid $orange;
+        }
+        
+    }
+    a{
+        text-transform: uppercase;
+        font-size: 15px;
+        opacity: 0.9;  
+        position: relative; 
+        
+        
+        
+        
+    }
+
+    .sub__menu{
+        width: 250px;
+        background-color: #fff;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 30;
+        li {
+            margin-top: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+            &:hover{
+                border-bottom: 2px solid $orange;
+            }
+            a{
+                line-height: 1.2;
+            }
+        }
+    }
+    
+}
+.nav__menu>li:first-child>a::after, .nav__menu>li:nth-child(2)>a::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #0009 transparent transparent transparent;
+    right: -14px;
+    top: 6px;
+    transition: $transition;
+}
+.nav__menu>li:first-child:hover >a::after, .nav__menu>li:nth-child(2):hover >a::after{
+    transform: rotate(-180deg);
+    top: 5px;
+}
+.sub__menu{
+    position: absolute;
+    left: -30px;
+    top: 27px;
+    z-index: 10;
+}
+
+.nav__menu>li:hover> .sub__menu,
+.sub__menu:hover{
+    opacity: 1;
+    visibility: visible;
+    transition: $transition;
+}
+
+
+
+.main>.container{
+    height: 1000px;
+}
