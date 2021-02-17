@@ -154,15 +154,15 @@ li.product__information { margin-bottom: 0; }
 
 .product__size_chart_wrapper:hover { cursor: pointer; }
 
-.product__size_calculate_pic { height: 31px; width: 13px; background-image: url(/img/dress.svg); background-size: 100%; margin-right: 10px; }
+.product__size_calculate_pic { height: 31px; width: 13px; background-image: url(../img/dress.svg); background-size: 100%; margin-right: 10px; }
 
 .product__size_calculate_title, .product__size_chart_title { line-height: 20px; opacity: 0.7; }
 
-.product__size_chart_pic { height: 28px; width: 31px; background-image: url(/img/size-chart.svg); background-size: 100%; margin-left: 5px; }
+.product__size_chart_pic { height: 28px; width: 31px; background-image: url(../img/size-chart.svg); background-size: 100%; margin-left: 5px; }
 
 .modal_wrapper { position: fixed; width: 100%; height: 100%; left: 0; top: 0; z-index: 20; display: none; }
 
-.modal__size_chart { width: 593px; height: 191.5px; background-image: url(/img/modal_size_chart.svg); background-size: 100%; }
+.modal__size_chart { width: 593px; height: 191.5px; background-image: url(../img/modal_size_chart.svg); background-size: 100%; }
 
 .modal_wrapper_show { display: block; }
 
@@ -184,27 +184,27 @@ li.product__information { margin-bottom: 0; }
 
 .product__social_items_block .facebook { border-radius: 3px; color: #fff; text-transform: capitalize; outline: none; font-family: 'Montserrat', sans-serif; border: none; font-weight: 400; background-color: #306199; padding: 5px 7px 5px 16px; font-size: 12px; -webkit-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
 
-.product__social_items_block .facebook:before { width: 6px; height: 10px; background-image: url(/img/fasebook.svg); top: 6px; left: 5px; }
+.product__social_items_block .facebook:before { width: 6px; height: 10px; background-image: url(../img/fasebook.svg); top: 6px; left: 5px; }
 
 .product__social_items_block .twitter { border-radius: 3px; color: #fff; text-transform: capitalize; outline: none; font-family: 'Montserrat', sans-serif; border: none; font-weight: 400; background-color: #26C4F1; padding: 5px 7px 5px 18px; font-size: 10px; -webkit-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
 
-.product__social_items_block .twitter:before { width: 10px; height: 8.5px; background-image: url(/img/twitter.svg); top: 6px; left: 5px; }
+.product__social_items_block .twitter:before { width: 10px; height: 8.5px; background-image: url(../img/twitter.svg); top: 6px; left: 5px; }
 
 .product__social_items_block .google { border-radius: 3px; color: #fff; text-transform: capitalize; outline: none; font-family: 'Montserrat', sans-serif; border: none; font-weight: 400; background-color: #E93F2E; padding: 5px 7px 5px 22px; font-size: 10px; -webkit-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
 
-.product__social_items_block .google::before { width: 15px; height: 15px; background-image: url(/img/google-plus.svg); top: 3px; left: 4px; }
+.product__social_items_block .google::before { width: 15px; height: 15px; background-image: url(../img/google-plus.svg); top: 3px; left: 4px; }
 
 .product__social_items_block .pinterest { border-radius: 3px; color: #fff; text-transform: capitalize; outline: none; font-family: 'Montserrat', sans-serif; border: none; font-weight: 400; background-color: #B81621; padding: 5px 7px 5px 20px; font-size: 10px; -webkit-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
 
-.product__social_items_block .pinterest::before { width: 12px; height: 12px; background-image: url(/img/pinterest.svg); top: 5px; left: 5px; }
+.product__social_items_block .pinterest::before { width: 12px; height: 12px; background-image: url(../img/pinterest.svg); top: 5px; left: 5px; }
 
 .product__social_items_block .youtube { border-radius: 3px; color: #fff; text-transform: capitalize; outline: none; font-family: 'Montserrat', sans-serif; border: none; font-weight: 400; background-color: #DF1C31; padding: 5px 7px 5px 20px; font-size: 10px; -webkit-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
 
-.product__social_items_block .youtube::before { width: 13px; height: 11px; background-image: url(/img/youtube-logo.svg); top: 4px; left: 5px; }
+.product__social_items_block .youtube::before { width: 13px; height: 11px; background-image: url(../img/youtube-logo.svg); top: 4px; left: 5px; }
 
 .product__social_items_block .instagram { border-radius: 3px; color: #fff; text-transform: capitalize; outline: none; font-family: 'Montserrat', sans-serif; border: none; font-weight: 400; background-color: #DF1C31; padding: 5px 7px 5px 20px; font-size: 10px; -webkit-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
 
-.product__social_items_block .instagram:before { width: 12px; height: 12px; background-image: url(/img/instagram.svg); top: 5px; left: 5px; }
+.product__social_items_block .instagram:before { width: 12px; height: 12px; background-image: url(../img/instagram.svg); top: 5px; left: 5px; }
 
 .video { margin-top: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
@@ -244,19 +244,19 @@ li.product__information { margin-bottom: 0; }
 
 .footer__social_item .footer__social_inner { position: absolute; background-size: 100%; background-repeat: no-repeat; }
 
-.footer__social_item .footer__inner_skype { background-image: url(/img/skype_footer.svg); width: 25px; height: 25px; top: 10px; left: 10px; }
+.footer__social_item .footer__inner_skype { background-image: url(../img/skype_footer.svg); width: 25px; height: 25px; top: 10px; left: 10px; }
 
-.footer__social_item .footer__inner_twitter { background-image: url(/img/twitter_footer.svg); width: 25px; height: 20px; left: 11px; top: 12px; }
+.footer__social_item .footer__inner_twitter { background-image: url(../img/twitter_footer.svg); width: 25px; height: 20px; left: 11px; top: 12px; }
 
-.footer__social_item .footer__inner_facebook { background-image: url(/img/facebook_footer.svg); height: 25px; width: 13px; top: 11px; left: 16px; }
+.footer__social_item .footer__inner_facebook { background-image: url(../img/facebook_footer.svg); height: 25px; width: 13px; top: 11px; left: 16px; }
 
-.footer__social_item .footer__inner_linkedin { background-image: url(/img/linkedin_footer.svg); height: 25px; width: 25px; top: 9px; left: 10px; }
+.footer__social_item .footer__inner_linkedin { background-image: url(../img/linkedin_footer.svg); height: 25px; width: 25px; top: 9px; left: 10px; }
 
-.footer__social_item .footer__inner_pinterest { background-image: url(/img/pinterest_footer.svg); height: 25px; width: 25px; top: 10px; left: 10px; }
+.footer__social_item .footer__inner_pinterest { background-image: url(../img/pinterest_footer.svg); height: 25px; width: 25px; top: 10px; left: 10px; }
 
-.footer__social_item .footer__inner_youtube { background-image: url(/img/youtube_footer.svg); height: 29px; width: 25px; top: 7.5px; left: 10px; }
+.footer__social_item .footer__inner_youtube { background-image: url(../img/youtube_footer.svg); height: 29px; width: 25px; top: 7.5px; left: 10px; }
 
-.footer__social_item .footer__inner_instagram { background-image: url(/img/instagram_footer.svg); width: 25px; height: 25px; top: 10px; left: 10px; }
+.footer__social_item .footer__inner_instagram { background-image: url(../img/instagram_footer.svg); width: 25px; height: 25px; top: 10px; left: 10px; }
 
 .footer__skype:hover { background-color: #12A5F4; }
 

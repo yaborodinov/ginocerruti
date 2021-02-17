@@ -322,7 +322,7 @@ li.product__information{
 .product__size_calculate_pic{
     height: 31px;
     width: 13px;
-    background-image: url(/img/dress.svg);
+    background-image: url(../img/dress.svg);
     background-size: 100%;
     margin-right: 10px;
 }
@@ -334,7 +334,7 @@ li.product__information{
 .product__size_chart_pic{
     height: 28px;
     width: 31px;
-    background-image: url(/img/size-chart.svg);
+    background-image: url(../img/size-chart.svg);
     background-size: 100%;
     margin-left: 5px;
 }
@@ -352,7 +352,7 @@ li.product__information{
 .modal__size_chart{
     width: 593px;
     height: 191.5px;
-    background-image: url(/img/modal_size_chart.svg);
+    background-image: url(../img/modal_size_chart.svg);
     background-size: 100%;
     
 }
@@ -414,7 +414,7 @@ li.product__information{
         &:before{
             width: 6px;
             height: 10px;
-            background-image: url(/img/fasebook.svg);
+            background-image: url(../img/fasebook.svg);
             top: 6px;
             left: 5px;
         }
@@ -426,7 +426,7 @@ li.product__information{
         &:before{
             width: 10px;
             height: 8.5px;
-            background-image: url(/img/twitter.svg);
+            background-image: url(../img/twitter.svg);
             top: 6px;
             left: 5px;
         }
@@ -437,7 +437,7 @@ li.product__information{
         &::before{
             width: 15px;
             height: 15px;
-            background-image: url(/img/google-plus.svg);
+            background-image: url(../img/google-plus.svg);
             top: 3px;
             left: 4px;
         }
@@ -448,7 +448,7 @@ li.product__information{
         &::before{
             width: 12px;
             height: 12px;
-            background-image: url(/img/pinterest.svg);
+            background-image: url(../img/pinterest.svg);
             top: 5px;
             left: 5px;
         }
@@ -459,7 +459,7 @@ li.product__information{
         &::before{
             width: 13px;
             height: 11px;
-            background-image: url(/img/youtube-logo.svg);
+            background-image: url(../img/youtube-logo.svg);
             top: 4px;
             left: 5px;
         }
@@ -470,7 +470,7 @@ li.product__information{
         &:before{
             width: 12px;
             height: 12px;
-            background-image: url(/img/instagram.svg);
+            background-image: url(../img/instagram.svg);
             top: 5px;
             left: 5px;
         }
@@ -582,7 +582,7 @@ li.product__information{
         background-repeat: no-repeat;
     };
     .footer__inner_skype{
-        background-image: url(/img/skype_footer.svg);
+        background-image: url(../img/skype_footer.svg);
         
         width: 25px;
         height: 25px;
@@ -590,42 +590,42 @@ li.product__information{
         left: 10px;
     }
     .footer__inner_twitter{
-        background-image: url(/img/twitter_footer.svg);
+        background-image: url(../img/twitter_footer.svg);
         width: 25px;
         height: 20px;
         left: 11px;
         top: 12px;
     }
     .footer__inner_facebook{
-        background-image: url(/img/facebook_footer.svg);
+        background-image: url(../img/facebook_footer.svg);
         height: 25px;
         width: 13px;
         top: 11px;
         left: 16px;
     }
     .footer__inner_linkedin{
-        background-image: url(/img/linkedin_footer.svg);
+        background-image: url(../img/linkedin_footer.svg);
         height: 25px;
         width: 25px;
         top: 9px;
         left: 10px;
     }
     .footer__inner_pinterest{
-        background-image: url(/img/pinterest_footer.svg);
+        background-image: url(../img/pinterest_footer.svg);
         height: 25px;
         width: 25px;
         top: 10px;
         left: 10px;
     }
     .footer__inner_youtube{
-        background-image: url(/img/youtube_footer.svg);
+        background-image: url(../img/youtube_footer.svg);
         height: 29px;
         width: 25px;
         top: 7.5px;
         left: 10px;
     }
     .footer__inner_instagram{
-        background-image: url(/img/instagram_footer.svg);
+        background-image: url(../img/instagram_footer.svg);
         width: 25px;
         height: 25px;
         top: 10px;
