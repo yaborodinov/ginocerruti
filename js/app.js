@@ -1,13 +1,6 @@
 "use strict"
 
-$(document).ready(function () {
-    $('.slider').slick({
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        adaptiveHeight: true
-    });
-});
+
 
 let scrollToTop = document.querySelector(".to_top");
 let header = document.querySelector(".header")
@@ -84,3 +77,11 @@ modal.addEventListener("click", function (e) {
     }
 })
 
+$(document).ready(function () {
+    $('.slider').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+});
