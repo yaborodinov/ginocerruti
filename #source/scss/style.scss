@@ -29,6 +29,14 @@ $pickerMidnightBlue:#00093A;
     
 }
 
+// button hover 
+%btnMiddleHover{
+    cursor: pointer;
+    box-shadow: (3px 3px 20px rgba(0, 0, 0, 0.37));
+}
+
+
+
 
 
 
@@ -168,12 +176,13 @@ $pickerMidnightBlue:#00093A;
     padding-bottom: 25px;
     border-bottom: $border;
 }
-.product__information_title{
+.product__information_title, .feedback__title{
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
     line-height: 22px;
+    opacity: 0.9;
 }
 .product__information{
     margin-bottom: 15px;
@@ -237,15 +246,13 @@ li.product__information{
     @include action_btn($green, 15px 35px, 18px,700, uppercase);
     margin-right: 25px;
     &:hover{
-        cursor: pointer;
-        box-shadow: (3px 3px 20px rgba(0, 0, 0, 0.37));
+        @extend %btnMiddleHover;
     }
 }
 .product__view_video{
     @include action_btn($orange, 12px 32px 15px 32px, 16px, 700, uppercase);
     &:hover{
-        cursor: pointer;
-        box-shadow: (3px 3px 20px rgba(0, 0, 0, 0.37));
+         @extend %btnMiddleHover;
     }
 }
 
@@ -320,6 +327,7 @@ li.product__information{
         &:hover{
         cursor: pointer;
         box-shadow: (0px 0px 10px rgba(0, 0, 0, 0.25));
+        
     }
     }
 
@@ -422,3 +430,210 @@ li.product__information{
 
 
 // section subscribe
+.feedback>.container{
+    align-items: center;
+    flex-direction: column;
+}
+.feedback__title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.feedback input{
+    margin-right: 25px;
+    width: 370px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    &::placeholder{
+        color: rgba(0, 0, 0, 0.35);
+        font-size: 14px;
+        line-height: 17px;
+        
+    }
+    &:focus{
+        outline: none;
+        opacity: 0.7;
+        line-height: 17px;
+        box-shadow: (0px 0px 10px rgba(0, 0, 0, 0.25));
+    }
+}
+.feedback__post{
+    @include action_btn($green, 15px 35px, 18px, 700, uppercase);
+    &:hover{
+         @extend %btnMiddleHover;
+    }
+}
+.feedback form{
+    margin-bottom: 100px;
+    
+}
+.feedback{
+    margin-top: 65px;
+    border-top: $border;
+    border-bottom: $border;
+}
+
+
+// footer
+.footer{
+    border-bottom: $border;
+}
+.footer__social_block{
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    a{
+        margin-right: 20px;
+    }
+}
+
+
+.footer__social_item{
+    width: 45px;
+    height: 45px;
+    background-color: #C4C4C4;
+    border-radius: 50px;
+    position: relative;
+    transition: $transition;
+    .footer__social_inner{
+        position: absolute;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    };
+    .footer__inner_skype{
+        background-image: url(/img/skype_footer.svg);
+        
+        width: 25px;
+        height: 25px;
+        top: 10px;
+        left: 10px;
+    }
+    .footer__inner_twitter{
+        background-image: url(/img/twitter_footer.svg);
+        width: 25px;
+        height: 20px;
+        left: 11px;
+        top: 12px;
+    }
+    .footer__inner_facebook{
+        background-image: url(/img/facebook_footer.svg);
+        height: 25px;
+        width: 13px;
+        top: 11px;
+        left: 16px;
+    }
+    .footer__inner_linkedin{
+        background-image: url(/img/linkedin_footer.svg);
+        height: 25px;
+        width: 25px;
+        top: 9px;
+        left: 10px;
+    }
+    .footer__inner_pinterest{
+        background-image: url(/img/pinterest_footer.svg);
+        height: 25px;
+        width: 25px;
+        top: 10px;
+        left: 10px;
+    }
+    .footer__inner_youtube{
+        background-image: url(/img/youtube_footer.svg);
+        height: 29px;
+        width: 25px;
+        top: 7.5px;
+        left: 10px;
+    }
+    .footer__inner_instagram{
+        background-image: url(/img/instagram_footer.svg);
+        width: 25px;
+        height: 25px;
+        top: 10px;
+        left: 10px;
+    }
+}
+
+.footer__skype:hover{
+    background-color: #12A5F4;
+
+}
+.footer__twitter:hover{
+    background-color: #019AD1;
+
+}
+.footer__facebook:hover{
+    background-color: #3B5998;
+
+}
+.footer__linkedin:hover{
+    background-color: #0E76A8;
+}
+
+.footer__pinterest:hover{
+    background-color: #AB171E;
+}
+.footer__youtube:hover, .footer__instagram:hover{
+    background-color: #b31217;
+}
+
+
+// footer content
+.footer__content{
+    margin-bottom: 100px;
+    .footer__content_help, .footer__content_policies, .footer__content_information, .footer__content_about{
+       padding-left: 10px;
+       padding-right: 10px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+    }
+    
+    h4{
+        display: block;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        line-height: 20px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid transparent;
+        transition: $transition;
+        &:hover{
+            border-bottom: 2px solid $orange;
+            
+        }
+    }
+}
+.footer__content_title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.9);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $orange;
+    width: 75%;
+    margin-bottom: 15px;
+    
+}
+.copyright{
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.to_top{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    width: 15px;
+    height: 15px;
+    border-right: 4px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.4);
+    transform: rotate(-135deg);
+    &:hover{
+        cursor: pointer;
+    }
+}
