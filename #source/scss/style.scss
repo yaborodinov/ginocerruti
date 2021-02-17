@@ -12,14 +12,15 @@ $pickerGreen:#005C41;
 $pickerBurgundy:#660014;
 $pickerMidnightBlue:#00093A;
 // action buttons
-@mixin action_btn($background-color, $padding, $font-size ){
+@mixin action_btn($background-color, $padding, $font-size,$font-weight, $text-transform ){
+    
     border-radius: 3px;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: $text-transform;
     outline: none;
     font-family: 'Montserrat', sans-serif;
     border: none;
-    font-weight: 700;
+    font-weight: $font-weight;
     box-shadow: (0px 0px 20px rgba(0, 0, 0, 0.25));
     background-color: $background-color;
     padding:$padding;
@@ -28,6 +29,8 @@ $pickerMidnightBlue:#00093A;
     box-shadow: (0px 0px 20px rgba(0, 0, 0, 0.25));
     
 }
+
+
 
 
 // header
@@ -187,7 +190,8 @@ li.product__information{
         padding-top: 25px;
         padding-bottom: 21px;
         margin-bottom: 0;
-    }
+    };
+    
 }
 
 // color picker
@@ -231,7 +235,7 @@ li.product__information{
     align-items: center;
 }
 .product__wish_btn{
-    @include action_btn($green, 15px 35px, 18px);
+    @include action_btn($green, 15px 35px, 18px,700, uppercase);
     margin-right: 25px;
     &:hover{
         cursor: pointer;
@@ -239,7 +243,7 @@ li.product__information{
     }
 }
 .product__view_video{
-    @include action_btn($orange, 12px 32px 15px 32px, 16px);
+    @include action_btn($orange, 12px 32px 15px 32px, 16px, 700, uppercase);
     &:hover{
         cursor: pointer;
         box-shadow: (3px 3px 20px rgba(0, 0, 0, 0.37));
@@ -260,7 +264,7 @@ li.product__information{
 .product__size_calculate_pic{
     height: 31px;
     width: 13px;
-    background-image: url(/img/Vector4.png);
+    background-image: url(/img/dress.svg);
     background-size: 100%;
     margin-right: 10px;
 }
@@ -270,9 +274,123 @@ li.product__information{
 }
 
 .product__size_chart_pic{
-    height: 31px;
+    height: 28px;
     width: 31px;
-    background-image: url(/img/size-chart.png);
+    background-image: url(/img/size-chart.svg);
     background-size: 100%;
     margin-left: 5px;
 }
+
+.product__social_block{
+    .product__information:first-child{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        border-bottom: $border;
+        a{
+            display: inline;
+            
+            color:rgb(99, 99, 245) ;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .product__information:nth-child(2){
+        padding-top: 25px;
+        padding-bottom: 22px;
+    }
+}
+
+.product__social_items_block{
+    justify-content: space-between;
+    .product__social_network{
+
+        position: relative;
+        color: #fff;
+        font-weight: 400;
+        line-height: 12px;
+        
+        &:before{
+            position: absolute;
+            content: "";
+            display: block;
+            background-size: 100%;
+        }
+    }
+
+    .facebook{
+        @include action_btn(#306199, 5px 7px 5px 16px, 10px, 400, capitalize);
+        
+        &:before{
+            width: 6px;
+            height: 10px;
+            background-image: url(/img/fasebook.svg);
+            top: 6px;
+            left: 5px;
+        }
+    }
+
+    .twitter{
+        @include action_btn(#26C4F1, 5px 7px 5px 18px, 10px, 400, capitalize);
+
+        &:before{
+            width: 10px;
+            height: 8.5px;
+            background-image: url(/img/twitter.svg);
+            top: 7px;
+            left: 5px;
+        }
+    }
+
+    .google{
+        @include action_btn(#E93F2E, 5px 7px 5px 22px, 10px, 400, capitalize);
+        &::before{
+            width: 15px;
+            height: 15px;
+            background-image: url(/img/google-plus.svg);
+            top: 4px;
+            left: 4px;
+        }
+    }
+
+    .pinterest{
+        @include action_btn(#B81621, 5px 7px 5px 20px, 10px, 400, capitalize);
+        &::before{
+            width: 12px;
+            height: 12px;
+            background-image: url(/img/pinterest.svg);
+            top: 5px;
+            left: 5px;
+        }
+    }
+
+    .youtube{
+        @include action_btn(#DF1C31, 5px 7px 5px 18px, 10px, 400, capitalize);
+        &::before{
+            width: 13px;
+            height: 11px;
+            background-image: url(/img/youtube-logo.svg);
+            top: 5px;
+            left: 5px;
+        }
+    }
+
+    .instagram{
+        @include action_btn(#DF1C31, 5px 7px 5px 20px, 10px, 400, capitalize);
+        &:before{
+            width: 12px;
+            height: 12px;
+            background-image: url(/img/instagram.svg);
+            top: 5px;
+            left: 5px;
+        }
+    }
+
+    
+}
+
+
+
+
+
+// section video

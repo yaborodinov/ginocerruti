@@ -134,8 +134,46 @@ li.product__information { margin-bottom: 0; }
 
 .product__size_calculate_wrapper, .product__size_chart_wrapper { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.product__size_calculate_pic { height: 31px; width: 13px; background-image: url(/img/Vector4.png); background-size: 100%; margin-right: 10px; }
+.product__size_calculate_pic { height: 31px; width: 13px; background-image: url(/img/dress.svg); background-size: 100%; margin-right: 10px; }
 
 .product__size_calculate_title, .product__size_chart_title { line-height: 20px; opacity: 0.7; }
 
-.product__size_chart_pic { height: 31px; width: 31px; background-image: url(/img/size-chart.png); background-size: 100%; margin-left: 5px; }
+.product__size_chart_pic { height: 28px; width: 31px; background-image: url(/img/size-chart.svg); background-size: 100%; margin-left: 5px; }
+
+.product__social_block .product__information:first-child { padding-top: 15px; padding-bottom: 10px; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+.product__social_block .product__information:first-child a { display: inline; color: #6363f5; }
+
+.product__social_block .product__information:first-child a:hover { text-decoration: underline; }
+
+.product__social_block .product__information:nth-child(2) { padding-top: 25px; padding-bottom: 22px; }
+
+.product__social_items_block { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.product__social_items_block .product__social_network { position: relative; color: #fff; font-weight: 400; line-height: 12px; }
+
+.product__social_items_block .product__social_network:before { position: absolute; content: ""; display: block; background-size: 100%; }
+
+.product__social_items_block .facebook { border-radius: 3px; color: #fff; text-transform: capitalize; outline: none; font-family: 'Montserrat', sans-serif; border: none; font-weight: 400; -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); background-color: #306199; padding: 5px 7px 5px 16px; font-size: 10px; -webkit-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); }
+
+.product__social_items_block .facebook:before { width: 6px; height: 10px; background-image: url(/img/fasebook.svg); top: 6px; left: 5px; }
+
+.product__social_items_block .twitter { border-radius: 3px; color: #fff; text-transform: capitalize; outline: none; font-family: 'Montserrat', sans-serif; border: none; font-weight: 400; -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); background-color: #26C4F1; padding: 5px 7px 5px 18px; font-size: 10px; -webkit-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); }
+
+.product__social_items_block .twitter:before { width: 10px; height: 8.5px; background-image: url(/img/twitter.svg); top: 7px; left: 5px; }
+
+.product__social_items_block .google { border-radius: 3px; color: #fff; text-transform: capitalize; outline: none; font-family: 'Montserrat', sans-serif; border: none; font-weight: 400; -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); background-color: #E93F2E; padding: 5px 7px 5px 22px; font-size: 10px; -webkit-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); }
+
+.product__social_items_block .google::before { width: 15px; height: 15px; background-image: url(/img/google-plus.svg); top: 4px; left: 4px; }
+
+.product__social_items_block .pinterest { border-radius: 3px; color: #fff; text-transform: capitalize; outline: none; font-family: 'Montserrat', sans-serif; border: none; font-weight: 400; -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); background-color: #B81621; padding: 5px 7px 5px 20px; font-size: 10px; -webkit-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); }
+
+.product__social_items_block .pinterest::before { width: 12px; height: 12px; background-image: url(/img/pinterest.svg); top: 5px; left: 5px; }
+
+.product__social_items_block .youtube { border-radius: 3px; color: #fff; text-transform: capitalize; outline: none; font-family: 'Montserrat', sans-serif; border: none; font-weight: 400; -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); background-color: #DF1C31; padding: 5px 7px 5px 18px; font-size: 10px; -webkit-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); }
+
+.product__social_items_block .youtube::before { width: 13px; height: 11px; background-image: url(/img/youtube-logo.svg); top: 5px; left: 5px; }
+
+.product__social_items_block .instagram { border-radius: 3px; color: #fff; text-transform: capitalize; outline: none; font-family: 'Montserrat', sans-serif; border: none; font-weight: 400; -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); background-color: #DF1C31; padding: 5px 7px 5px 20px; font-size: 10px; -webkit-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); }
+
+.product__social_items_block .instagram:before { width: 12px; height: 12px; background-image: url(/img/instagram.svg); top: 5px; left: 5px; }
