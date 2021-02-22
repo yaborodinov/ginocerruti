@@ -3,25 +3,38 @@
 
 
 let scrollToTop = document.querySelector(".to_top");
-let header = document.querySelector(".header")
+let main = document.querySelector(".product__title")
 
 let intoVideoBnt = document.querySelector(".product__view_video");
 let videoContent = document.querySelector(".video")
 
-function scrollDown(el) {
-    el.scrollIntoView({ block: "start", behavior: "smooth" })
+function scrollTop(el) {
+    el.scrollIntoView({ block: "end", behavior: "smooth" })
+}
+function scrollToVideo(el ) {
+    el.scrollIntoView({ block: "center", behavior: "smooth" })
 }
 
 
 
-
 scrollToTop.addEventListener("click", () => {
-    scrollDown(header);
+    scrollTop(main);
 })
 
 intoVideoBnt.addEventListener("click", () => {
-    scrollDown(videoContent);
+    scrollToVideo(videoContent);
 })
+
+
+// scrollToTop.addEventListener("click", () => {
+//     window.scrollTo(0,0)
+// })
+
+    
+    
+    
+    
+
 
 
 // change color
@@ -85,3 +98,19 @@ $(document).ready(function () {
         adaptiveHeight: true
     });
 });
+
+
+// mobile menu
+
+let menuBtn = document.querySelector(".nav__mobile_menu");
+let navigation = document.querySelector(".navigation");
+let mobileMenuBurger = document.querySelector(".nav__mobile_menu_burger");
+let dropMobileMenuItems = document.querySelectorAll(".nav__menu li")
+menuBtn.addEventListener("click", () => {
+    navigation.classList.toggle("hidden_menu");
+    mobileMenuBurger.classList.toggle("nav__mobile_menu_burger_active");
+    
+})
+
+console.log(dropMobileMenuItems)
+

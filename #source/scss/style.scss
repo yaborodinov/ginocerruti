@@ -43,6 +43,10 @@ $pickerMidnightBlue:#00093A;
 // header
 .header{
     border-bottom: $border;
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background-color: #fff;
 }
 .logo{
     padding-top: 16px;
@@ -67,17 +71,45 @@ $pickerMidnightBlue:#00093A;
 
 .menu{
     display: flex;
+    
     margin-top: 35px;
+    justify-content: flex-end;
     .navigation{
         width: 100%;
+        // display: none;
+        position: fixed;
+        top: 87px;
+        right: 0;
+        bottom: 0;
+        max-width: 200px;
+        transition: $transition;
+        background-color: #ffffff;
+        z-index: 30;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: (0px 14px 9px 3px rgba(0, 0, 0, 0.37));
+    }
+
+
+        
+    
+    .hidden_menu{
+        transform: translateX(150%);
+        opacity: 0;
+        visibility: hidden;
     }
 }
 .nav__menu{
     justify-content: space-between;
+    flex-direction: column;
+    margin-top: 40px;
+    text-align: end;
     li{
         position: relative;
         transition: $transition;
         border-bottom: 2px solid transparent;
+        margin-bottom: 20px;
+        padding-right: 15px;
         &:hover{
             padding-bottom: 10px;
             border-bottom: 2px solid $orange;
@@ -86,9 +118,10 @@ $pickerMidnightBlue:#00093A;
     }
     a{
         text-transform: uppercase;
-        font-size: 15px;
+        font-size: 17px;
         opacity: 0.9;  
         position: relative; 
+        color: rgb(0, 0, 0);
         
         
         
@@ -127,8 +160,9 @@ $pickerMidnightBlue:#00093A;
     border-style: solid;
     border-width: 5px 5px 0 5px;
     border-color: #0009 transparent transparent transparent;
-    right: -14px;
-    top: 6px;
+    right: 130px;
+    
+    top: 5px;
     transition: $transition;
 }
 .nav__menu>li:first-child:hover >a::after, .nav__menu>li:nth-child(2):hover >a::after{
@@ -148,6 +182,62 @@ $pickerMidnightBlue:#00093A;
     visibility: visible;
     transition: $transition;
 }
+
+// mobile menu
+
+
+.nav__mobile_menu{
+    display: flex;
+    .nav__mobile_menu{
+        font-size: 27px;
+        opacity: 0.9;
+    }
+}
+.nav__mobile_menu_burger{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 5px;
+    
+    span{
+        height: 2px;
+        background-color: rgb(90, 88, 88);
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: $transition;
+        &:nth-child(1){
+            top: 3px;
+        };
+        &:nth-child(2){
+            top: 9px;
+        };
+        &:nth-child(3){
+            bottom: 3px;
+        }
+    }
+    
+}
+
+.nav__mobile_menu_burger_active{
+            span{
+        
+        &:nth-child(1){
+            top: 50%;
+            transform: rotate(45deg);
+        };
+        &:nth-child(2){
+            top: 50%;
+            transform: rotate(-45deg)
+        };
+        &:nth-child(3){
+            transform: scale(0);
+        }
+    }
+}
+
 
 
 
@@ -706,3 +796,137 @@ li.product__information{
         cursor: pointer;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet */
+@media(min-width:768px){
+
+
+}
+
+
+
+/* laptop */
+@media(min-width:992px){
+    .menu{
+    justify-content: flex-start;
+        .navigation{
+            position: static;
+            display: block;
+            max-width: none;
+            background-color: transparent;
+            z-index: 1;
+            opacity: 1;
+            box-shadow: none;
+        }
+        .hidden_menu{
+            transform: none;
+            opacity: 1;
+            visibility: visible;
+            
+        }
+    }
+    .nav__menu{
+        flex-direction: row;
+        margin-top: 0;
+        text-align: start;
+        li{
+            margin-bottom: 0;
+            padding-right: 0;
+        };
+        a{
+            color: #000;
+            font-size: 15px;
+        }
+    }
+    .nav__menu a{
+        font-size: 12px;
+    }
+
+    .nav__menu>li:first-child>a::after, .nav__menu>li:nth-child(2)>a::after{
+        right: -14px;
+    }
+
+
+
+    .product__wish_btn{
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+    .product__view_video{
+        padding: 9px 29px 12px 29px;
+        font-size: 14px;
+    }
+    .feedback__post{
+        padding: 13px 32px;
+        font-size: 16px;
+    }
+    .footer__content_title{
+        font-size: 15px;
+    }
+
+    .nav__mobile_menu{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+/* desktop */
+@media(min-width:1200px){
+
+    .nav__menu a{
+        font-size: 15px;
+    }
+
+    .product__wish_btn{
+        padding: 15px 35px;
+        font-size: 18px;
+    }
+    .product__view_video{
+        padding: 12px 32px 15px 32px;
+        font-size: 16px;
+    }
+    .feedback__post{
+        padding: 15px 35px;
+        font-size: 18px;
+    }
+    .footer__content_title{
+        font-size: 18px;
+    }
+
+}
+
+
+
+
+
+/* mobile */
+@media(max-width:767px){
+
+   
+
+}
+
+
+
