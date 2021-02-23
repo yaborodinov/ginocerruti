@@ -26,9 +26,7 @@ intoVideoBnt.addEventListener("click", () => {
 })
 
 
-// scrollToTop.addEventListener("click", () => {
-//     window.scrollTo(0,0)
-// })
+
 
     
     
@@ -112,5 +110,27 @@ menuBtn.addEventListener("click", () => {
     
 })
 
-console.log(dropMobileMenuItems)
+
+
+
+let menuItemCollections = document.querySelector(".collections");
+let menuItemBestSellers = document.querySelector(".best_sellers");
+let subMenuCollections = document.querySelector(".sub__menu_collections")
+let subMenuBestSellers = document.querySelector(".sub__menu__best_sellers")
+
+
+
+menuItemCollections.addEventListener("pointerdown", () => {
+    subMenuCollections.classList.toggle("sub__menu_mibile_show");
+    subMenuBestSellers.classList.remove("sub__menu_mibile_show")
+})
+
+menuItemBestSellers.addEventListener("pointerdown", () => {
+    subMenuBestSellers.classList.toggle("sub__menu_mibile_show");
+    subMenuCollections.classList.remove("sub__menu_mibile_show")
+})
+
+
+
+
 

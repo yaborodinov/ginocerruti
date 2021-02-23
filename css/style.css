@@ -69,7 +69,7 @@ body { font-family: 'Montserrat', sans-serif; font-weight: 400; color: #000; fon
 
 .menu { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 35px; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 
-.menu .navigation { width: 100%; position: fixed; top: 87px; right: 0; bottom: 0; max-width: 200px; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; background-color: #ffffff; z-index: 30; opacity: 1; visibility: visible; -webkit-box-shadow: 0px 14px 9px 3px rgba(0, 0, 0, 0.37); box-shadow: 0px 14px 9px 3px rgba(0, 0, 0, 0.37); }
+.menu .navigation { width: 100%; position: fixed; top: 87px; right: 0; bottom: 0; max-width: 180px; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; background-color: #ffffff; z-index: 30; opacity: 1; visibility: visible; -webkit-box-shadow: 0px 14px 9px 3px rgba(0, 0, 0, 0.37); box-shadow: 0px 14px 9px 3px rgba(0, 0, 0, 0.37); }
 
 .menu .hidden_menu { -webkit-transform: translateX(150%); -ms-transform: translateX(150%); transform: translateX(150%); opacity: 0; visibility: hidden; }
 
@@ -81,19 +81,21 @@ body { font-family: 'Montserrat', sans-serif; font-weight: 400; color: #000; fon
 
 .nav__menu a { text-transform: uppercase; font-size: 17px; opacity: 0.9; position: relative; color: black; }
 
-.nav__menu .sub__menu { width: 250px; background-color: #fff; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; opacity: 0; visibility: hidden; z-index: 10; }
+.nav__menu .sub__menu { width: 200px; background-color: #fff; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; opacity: 0; visibility: hidden; z-index: 10; }
 
-.nav__menu .sub__menu li { margin-top: 10px; padding-bottom: 5px; border-bottom: 2px solid transparent; }
+.nav__menu .sub__menu li { padding-right: 0; margin-top: 10px; padding-bottom: 5px; border-bottom: 2px solid transparent; margin-bottom: 15px; }
 
 .nav__menu .sub__menu li:hover { border-bottom: 2px solid rgba(202, 188, 115, 0.69); }
 
 .nav__menu .sub__menu li a { line-height: 1.2; }
 
+.nav__menu .sub__menu_mibile_show { opacity: 1; visibility: visible; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+
 .nav__menu > li:first-child > a::after, .nav__menu > li:nth-child(2) > a::after { position: absolute; content: ""; display: block; width: 0; height: 0; border-style: solid; border-width: 5px 5px 0 5px; border-color: #0009 transparent transparent transparent; right: 130px; top: 5px; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 
 .nav__menu > li:first-child:hover > a::after, .nav__menu > li:nth-child(2):hover > a::after { -webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg); transform: rotate(-180deg); top: 5px; }
 
-.sub__menu { position: absolute; left: -15px; top: 27px; z-index: 10; }
+.sub__menu { position: absolute; right: 177px; top: 27px; z-index: 10; border-right: 2px solid rgba(202, 188, 115, 0.69); border-bottom: 2px solid rgba(202, 188, 115, 0.69); -webkit-box-shadow: -5px 5px 17px 0px rgba(0, 0, 0, 0.37); box-shadow: -5px 5px 17px 0px rgba(0, 0, 0, 0.37); }
 
 .nav__menu > li:hover > .sub__menu, .sub__menu:hover { opacity: 1; visibility: visible; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 
@@ -313,8 +315,11 @@ li.product__information { margin-bottom: 0; }
   .nav__menu { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; margin-top: 0; text-align: start; }
   .nav__menu li { margin-bottom: 0; padding-right: 0; }
   .nav__menu a { color: #000; font-size: 15px; }
+  .nav__menu .sub__menu_mibile_show { opacity: 1; visibility: visible; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
   .nav__menu a { font-size: 12px; }
   .nav__menu > li:first-child > a::after, .nav__menu > li:nth-child(2) > a::after { right: -14px; }
+  .sub__menu { width: 250px; left: -15px; border-right: none; border-bottom: none; -webkit-box-shadow: none; box-shadow: none; }
+  .sub__menu li { padding-right: 15px; margin-bottom: 20px; }
   .product__wish_btn { padding: 12px 30px; font-size: 16px; }
   .product__view_video { padding: 9px 29px 12px 29px; font-size: 14px; }
   .feedback__post { padding: 13px 32px; font-size: 16px; }
