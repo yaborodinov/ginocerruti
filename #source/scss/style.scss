@@ -260,9 +260,7 @@ $pickerMidnightBlue:#00093A;
     padding-top: 50px;
 }
 // slider
-.slider{
-    padding-right: 50px;
-}
+
 .slider img{
     width: 100%;
     height: auto;
@@ -281,7 +279,7 @@ $pickerMidnightBlue:#00093A;
 .slick-next{
     
     z-index: 10;
-    right: 70px;
+    right: 20px;
 }
 
 .slick-prev:before,
@@ -305,7 +303,10 @@ $pickerMidnightBlue:#00093A;
 
 
 
-
+.product{
+    flex-direction: column;
+    
+}
 
 .product__title{
     font-size: 36px;
@@ -829,7 +830,31 @@ li.product__information{
 
 /* tablet */
 @media(min-width:768px){
+    
+    // main 
 
+
+    .slider{
+        padding-right: 50px;
+    }
+    .slick-next{
+        right: 70px;
+    }
+    .product{
+        flex-direction: row;
+        
+    }
+
+
+    .product__wish_btn{
+        font-size: 15px;
+    }
+    .product__view_video{
+        font-size: 13px;
+    }
+    .footer__content_title{
+        font-size: 14px;
+    }
 
 }
 
@@ -868,8 +893,8 @@ li.product__information{
             font-size: 15px;
         };
         .sub__menu_mibile_show{
-            opacity: 1;
-            visibility: visible;
+            opacity: 0;
+            visibility: hidden;
             transition: $transition;
         }
 
@@ -897,6 +922,13 @@ li.product__information{
     }
     
 
+
+    .product__wish_btn{
+        font-size: 18px;
+    }
+    .product__view_video{
+        font-size: 16px;
+    }
 
 
     .product__wish_btn{
@@ -957,8 +989,68 @@ li.product__information{
 
 /* mobile */
 @media(max-width:767px){
+    .product__title, .product__price, .product__information_title{
+        text-align: center;
+    }
+    .product__color_picker{
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+   .product__buttons_block{
+       flex-direction: column;
+       align-items: center;
+       .product__wish_btn{
+           margin-right: 0;
+           margin-bottom: 15px;
+       }
+   }
+   .product__social_items_block{
+       justify-content: space-around;
+       flex-wrap: wrap;
+       a{
+           margin-right: 15px;
+           margin-bottom: 20px;
+       }
+   }
 
-   
+   .feedback__title{
+       text-align: center;
+   }
+   .feedback input{
+       margin-right: 0;
+       width: 250px;
+   }
+   form{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       input{
+           margin-bottom: 15px;
+           
+          
+       }
+   }
+
+   iframe{
+       height: 200px !important; 
+   }
+
+
+//    footer
+   .footer__social_block{
+       flex-wrap: wrap;
+       a{
+           margin-bottom: 10px;
+       }
+   }
+
+   .footer__content{
+       flex-wrap: wrap;
+   }
+   .footer__content_about,.footer__content_help,.footer__content_information,.footer__content_policies{
+       width: 100%;
+       margin-bottom: 30px;
+   }
 
 }
 
